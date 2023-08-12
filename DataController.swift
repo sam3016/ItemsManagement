@@ -163,7 +163,7 @@ class DataController: ObservableObject {
             let itemPredicate = NSPredicate(format: "item CONTAINS %@", item)
             predicates.append(itemPredicate)
         } else {
-            let datePredicate = NSPredicate(format: "startDate > %@", filter.minModificationDate as NSDate)
+            let datePredicate = NSPredicate(format: "endDate > %@", filter.minModificationDate as NSDate)
             predicates.append(datePredicate)
         }
 

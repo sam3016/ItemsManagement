@@ -13,12 +13,12 @@ extension LineItem {
     }
 
     var lineItemStartDate: Date {
-        get { startDate ?? Date() }
+        get { startDate ?? .now }
         set { startDate = newValue }
     }
 
     var lineItemEndDate: Date {
-        get { endDate ?? Date() }
+        get { endDate ?? .now }
         set { endDate = newValue }
     }
 

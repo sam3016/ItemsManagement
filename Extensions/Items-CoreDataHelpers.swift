@@ -59,7 +59,7 @@ extension Item: Comparable {
         let right = rhs.itemName.localizedLowercase
 
         if left == right {
-            return lhs.itemID.uuidString < rhs.itemID.uuidString
+            return lhs.itemCreationDate < rhs.itemCreationDate
         } else {
             return left < right
         }
